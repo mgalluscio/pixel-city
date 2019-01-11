@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapVC" customModule="pixel_city" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqf-V0-cmv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvp-Cz-fmv">
-                                <rect key="frame" x="348" y="666" width="50" height="50"/>
+                                <rect key="frame" x="309" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="9l1-8V-2KX"/>
                                     <constraint firstAttribute="height" constant="50" id="Ukv-yr-pc3"/>
@@ -33,14 +33,17 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyk-XY-zzM">
-                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8b7-xo-AqR"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PU-KN-Sfe">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PU-KN-Sfe">
+                                <rect key="frame" x="0.0" y="30" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double-tap to drop a pin and view photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi4-TS-gNK">
-                                        <rect key="frame" x="27.666666666666657" y="29.666666666666671" width="359" height="21"/>
+                                        <rect key="frame" x="8" y="14.5" width="359" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="359" id="Ecq-TT-gM1"/>
                                             <constraint firstAttribute="height" constant="21" id="q74-mK-aC2"/>
@@ -53,26 +56,34 @@
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Pi4-TS-gNK" firstAttribute="centerX" secondItem="9PU-KN-Sfe" secondAttribute="centerX" id="0Ua-L4-Qjw"/>
-                                    <constraint firstItem="Pi4-TS-gNK" firstAttribute="centerY" secondItem="9PU-KN-Sfe" secondAttribute="centerY" id="B7e-al-pIH"/>
-                                    <constraint firstAttribute="height" constant="80" id="ykW-7f-pdz"/>
+                                    <constraint firstItem="Pi4-TS-gNK" firstAttribute="centerY" secondItem="9PU-KN-Sfe" secondAttribute="centerY" constant="10" id="B7e-al-pIH"/>
+                                    <constraint firstItem="Pi4-TS-gNK" firstAttribute="centerY" secondItem="9PU-KN-Sfe" secondAttribute="centerY" id="IfM-Se-ddZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="ykW-7f-pdz"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B7e-al-pIH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="B7e-al-pIH"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hvp-Cz-fmv" secondAttribute="bottom" constant="20" id="150-9v-XzK"/>
                             <constraint firstAttribute="trailing" secondItem="Gyk-XY-zzM" secondAttribute="trailing" id="2Ss-A8-zBc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gyk-XY-zzM" secondAttribute="bottom" id="Eyx-YL-tk0"/>
+                            <constraint firstItem="Gyk-XY-zzM" firstAttribute="top" secondItem="Hvp-Cz-fmv" secondAttribute="bottom" constant="20" id="7Kd-ag-jak"/>
+                            <constraint firstAttribute="bottom" secondItem="Gyk-XY-zzM" secondAttribute="bottom" id="FTn-Gp-fUn"/>
                             <constraint firstItem="Mqf-V0-cmv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FVF-Qm-exg"/>
                             <constraint firstItem="Gyk-XY-zzM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KAl-QH-lEg"/>
-                            <constraint firstItem="9PU-KN-Sfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q3K-4B-V27"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hvp-Cz-fmv" secondAttribute="trailing" constant="16" id="QvZ-6y-b8R"/>
                             <constraint firstItem="9PU-KN-Sfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RRV-Fe-pxB"/>
                             <constraint firstItem="Mqf-V0-cmv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="U9v-UR-4cu"/>
-                            <constraint firstItem="Gyk-XY-zzM" firstAttribute="top" secondItem="Mqf-V0-cmv" secondAttribute="bottom" id="VAr-qC-ePH"/>
-                            <constraint firstItem="9PU-KN-Sfe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vrd-Je-gee"/>
+                            <constraint firstItem="9PU-KN-Sfe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="Vrd-Je-gee"/>
                             <constraint firstItem="Mqf-V0-cmv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gLF-d8-JKX"/>
-                            <constraint firstItem="9PU-KN-Sfe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kZg-0Q-Uzj"/>
                             <constraint firstItem="9PU-KN-Sfe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tmp-cB-Zpf"/>
                             <constraint firstItem="Mqf-V0-cmv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yRn-py-DjA"/>
                         </constraints>
@@ -80,6 +91,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Mqf-V0-cmv" id="PTQ-Q1-Bvn"/>
+                        <outlet property="pullUpView" destination="Gyk-XY-zzM" id="SOr-Ft-CRH"/>
+                        <outlet property="pullUpViewHeightContraint" destination="8b7-xo-AqR" id="7Wu-KQ-VSL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
