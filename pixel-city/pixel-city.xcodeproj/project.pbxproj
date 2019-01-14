@@ -10,6 +10,7 @@
 		8A6D51392DFEC4F747B852F5 /* Pods_pixel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D02F22605ED49543528596 /* Pods_pixel_city.framework */; };
 		A41D8AB621E552D10017D325 /* DroppablePIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D8AB521E552D10017D325 /* DroppablePIn.swift */; };
 		A41D8AB821E83F1D0017D325 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D8AB721E83F1D0017D325 /* PhotoCell.swift */; };
+		A41D8ABA21EBFFE50017D325 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D8AB921EBFFE50017D325 /* Constants.swift */; };
 		A4F9AE8721E43A830059E285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9AE8621E43A830059E285 /* AppDelegate.swift */; };
 		A4F9AE8921E43A830059E285 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9AE8821E43A830059E285 /* MapVC.swift */; };
 		A4F9AE8C21E43A830059E285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F9AE8A21E43A830059E285 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		7C9A41C6DAA1ECC84B796F5B /* Pods-pixel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.debug.xcconfig"; sourceTree = "<group>"; };
 		A41D8AB521E552D10017D325 /* DroppablePIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePIn.swift; sourceTree = "<group>"; };
 		A41D8AB721E83F1D0017D325 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		A41D8AB921EBFFE50017D325 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A4F9AE8321E43A830059E285 /* pixel-city.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pixel-city.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F9AE8621E43A830059E285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F9AE8821E43A830059E285 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		A4F9AE9C21E43AF70059E285 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A41D8AB921EBFFE50017D325 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41D8ABA21EBFFE50017D325 /* Constants.swift in Sources */,
 				A41D8AB821E83F1D0017D325 /* PhotoCell.swift in Sources */,
 				A41D8AB621E552D10017D325 /* DroppablePIn.swift in Sources */,
 				A4F9AE8921E43A830059E285 /* MapVC.swift in Sources */,
